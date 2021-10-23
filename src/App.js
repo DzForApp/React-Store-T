@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'; 
 import './App.css';
-import Toolbar from './components/NavBar/Toolbar';
- import Main from './components/Main/main';
-import { Switch, Route, Link } from 'react-router-dom';
-import SideDrwaer from './components/SideDrawer/SideDrawer'
-import BackDrop from './components/BackDrop/BackDrop';
+import Navbar from './components/NavBar/Navbar'; 
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'; 
+import Home from './components/Pages/Home';
+import Products from './components/Pages/Products';
+import Reports from './components/Pages/Reports';
 
 class App extends Component{
   state ={
@@ -19,21 +18,21 @@ class App extends Component{
   };
 
   render(){
-    let sidedrawer;
-    let backdrop;
-
-    if(this.state.sideDrawerOpen) {
-      sidedrawer =<SideDrwaer />;
-      backdrop =<BackDrop />
-    }
+  
+    
   return (
     <div className="App">
-      <Toolbar DrawerClickHandler ={this.props.darwerToggleClickHandler}/>
+      <BrowserRouter>
+            <Navbar />
+            <Switch>
+              <Route path='/' exact component={Home}/>
+              <Route path='/reports' component={Reports}/>
+              <Route  path='/products' component={Products}/>
+              
       
-      <main style={{marginTop : "55px"}}>
-      <Main />
-      </main>
-       
+            </Switch>
+      </BrowserRouter>
+        
     </div>
   );
   }
