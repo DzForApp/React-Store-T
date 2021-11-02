@@ -1,0 +1,32 @@
+.prod_box{
+    width: 300px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 010px 10px 1px rgb(43, 40, 40);
+    margin: 20px;
+    list-style: none;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.prod_list {
+    width: 60%;
+    height: 750px;
+    margin-left: 20%;
+    margin-top: 0px; 
+    
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+ 

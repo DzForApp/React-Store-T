@@ -20,12 +20,8 @@ function PhotoFetching() {
 
     return (
         <div>
-            <input type="text" value={id} onChange={e => setId(e.target.value)}/>
-            <div>
-                
-                     {photo.title}
-                
-            </div> 
+            <input type="text" value={id} onChange={e => setId(e.target.value)} />
+            <div>{photo.title}</div> 
             <img src = {photo.url} /> 
                 
           

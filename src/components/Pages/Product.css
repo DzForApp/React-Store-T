@@ -1,6 +1,14 @@
 .piclist {
-    width: 1000px;
-    background-color: brown;
+    width: 100%; 
+   
+    background-color: #FFC300;
     font-size: large;
 }
- 
+ .products{
+    margin-top: 0%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  
+     justify-content: center;
+ }

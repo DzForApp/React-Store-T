@@ -1,14 +1,19 @@
 import React from "react"; 
-import PhotoFetching  from '../Data/ProductsData';
+import ProdList from "../Data/ProdList";
+
+ 
 import './Product.css'
 
 
 function Products (){
     return(
         <div className="products">
-            <h5>Products</h5>
+            <div>
+                <h5>Products</h5>
+            </div>
+
             <div className="piclist">
-            <PhotoFetching />
+             <ProdList />
             </div>
         </div>
     )
